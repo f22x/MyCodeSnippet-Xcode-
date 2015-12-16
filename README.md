@@ -1,5 +1,9 @@
 # MyCodeSnippet-Xcode-
 
+#instructions
+
+Contains various snippets in Xcode
+
 #usage
 
 Copy the folder to the path
