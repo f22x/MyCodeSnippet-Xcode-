@@ -16,3 +16,12 @@ Xcode上常用的代码片
 #使用
 
 把文件复制到 ~/Library/Developer/Xcode/UserData/CodeSnippets/ 路径下
+
+
+``` bash
+$ gem install cocoapods
+
+```
+``` bash
+$ gem install cocoapods
+```
