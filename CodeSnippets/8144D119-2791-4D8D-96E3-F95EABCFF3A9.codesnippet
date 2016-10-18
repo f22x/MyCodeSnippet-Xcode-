@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>updateCollectionView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)updateCollectionView {
+    __weak __typeof(self) weakSelf = self;
+    [self.&lt;#(nullable id)#&gt; addPullToRefreshWithActionHandler:^{
+        [weakSelf.&lt;#(nullable id)#&gt; refreshWithAcid:weakSelf.acid
+                                success:^{
+                                    [weakSelf.&lt;#(nullable id)#&gt;.pullToRefreshView stopAnimating];
+                                    [weakSelf.&lt;#(nullable id)#&gt; reloadData];
+                                }
+                                   fail:^(NSError *error) {
+                                       [weakSelf.&lt;#(nullable id)#&gt;.pullToRefreshView stopAnimating];
+                                       [GQHUDView showError:error.domain];
+                                   }];
+    }];
+    
+    [self.&lt;#(nullable id)#&gt; addInfiniteScrollingWithActionHandler:^{
+        [weakSelf.&lt;#(nullable id)#&gt; loadMoreWithAcid:weakSelf.acid
+                                 success:^{
+                                     [weakSelf.&lt;#(nullable id)#&gt;.infiniteScrollingView stopAnimating];
+                                     [weakSelf.&lt;#(nullable id)#&gt; reloadData];
+                                 }
+                                    fail:^(NSError *error) {
+                                        [weakSelf.&lt;#(nullable id)#&gt;.pullToRefreshView stopAnimating];
+                                        [GQHUDView showError:error.domain];
+                                    }];
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8144D119-2791-4D8D-96E3-F95EABCFF3A9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>updateCollectionView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>updateCollectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

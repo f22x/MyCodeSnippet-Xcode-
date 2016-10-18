@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>updateTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)updateTableView {
+    __weak __typeof(self) weakSelf = self;
+    [self.&lt;#(nullable id)#&gt; addPullToRefreshWithActionHandler:^{
+        [weakSelf.&lt;#(nullable id)#&gt; refreshWithStatus:nil
+                                             url:@"root/auction/user_auction_list"
+                                         success:^{
+                                             [weakSelf.&lt;#(nullable id)#&gt;.pullToRefreshView stopAnimating];
+                                             [weakSelf.&lt;#(nullable id)#&gt; reloadData];
+                                         }
+                                            fail:^(NSError *error) {
+                                                [weakSelf.&lt;#(nullable id)#&gt;.pullToRefreshView stopAnimating];
+                                                [GQHUDView showError:error.domain];
+                                            }];
+    }];
+    
+    [self.&lt;#(nullable id)#&gt; addInfiniteScrollingWithActionHandler:^{
+        [weakSelf.&lt;#(nullable id)#&gt; loadMoreWithStatus:nil
+                                              url:@"root/auction/user_auction_list"
+                                          success:^{
+                                              [weakSelf.&lt;#(nullable id)#&gt;.infiniteScrollingView stopAnimating];
+                                              [weakSelf.&lt;#(nullable id)#&gt; reloadData];
+                                          }
+                                             fail:^(NSError *error) {
+                                                 [weakSelf.&lt;#(nullable id)#&gt;.infiniteScrollingView stopAnimating];
+                                                 [GQHUDView showError:error.domain];
+                                             }];
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E0A953F8-2F31-4F1B-AE39-FA771DD4922C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>updateTableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>updateTableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

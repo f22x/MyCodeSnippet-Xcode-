@@ -3,23 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myclass</string>
+	<string>mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (&lt;#(nonnull NSString *), ...#&gt;)&lt;#(nonnull NSString *), ...#&gt; {
-    
-}</string>
+	<string>// MARK: - &lt;#T##NSString#&gt;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>81B5EDC4-8569-4E70-88E5-1575948688B3</string>
+	<string>6E135196-7BC9-449E-86E3-898D0DF77A05</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>myclass</string>
+	<string>mark</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>myclass</string>
+	<string>mark</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

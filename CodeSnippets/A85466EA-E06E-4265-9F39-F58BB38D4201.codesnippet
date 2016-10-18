@@ -9,10 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//----------------------------------------
-</string>
+	<string>// ---------------&lt;#(nonnull NSString *), ...#&gt;---------------!</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D6748A74-EE50-4A71-8CCC-A8332B66E6CE</string>
+	<string>A85466EA-E06E-4265-9F39-F58BB38D4201</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>

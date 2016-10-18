@@ -3,26 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myclass</string>
+	<string>myview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (&lt;#(nonnull NSString *), ...#&gt;)&lt;#(nonnull NSString *), ...#&gt; {
-    
+	<string>- (UIView *)&lt;#condition#&gt; {
+    if (!_&lt;#condition#&gt;) {
+        _&lt;#condition#&gt; = [[UIView alloc] initWithFrame:CGRectZero];
+        _&lt;#condition#&gt;.backgroundColor = [UIColor whiteColor];
+    }
+    return _&lt;#condition#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>81B5EDC4-8569-4E70-88E5-1575948688B3</string>
+	<string>ECB14CCF-94A7-490E-8D22-48E518E3FE78</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>myclass</string>
+	<string>myview</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>myclass</string>
+	<string>myview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

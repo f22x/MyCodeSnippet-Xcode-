@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mybutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;#condition#&gt; {
+    if (!_&lt;#condition#&gt;) {
+        _&lt;#condition#&gt; = [UIButton buttonWithType:UIButtonTypeCustom];
+        _&lt;#condition#&gt;.backgroundColor = [GQConfig &lt;#condition#&gt;];
+        _&lt;#condition#&gt;.layer.cornerRadius = 2.f;
+        [_&lt;#condition#&gt; setTitle:@"&lt;#condition#&gt;" forState:UIControlStateNormal];
+        [_&lt;#condition#&gt; setTitleColor:[UIColor &lt;#condition#&gt;] forState:UIControlStateNormal];
+        [_&lt;#condition#&gt; addTarget:self action:@selector(&lt;#condition#&gt;) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _&lt;#condition#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>04477BBA-57E6-4046-8967-D0307D179924</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mybutton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mybutton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
